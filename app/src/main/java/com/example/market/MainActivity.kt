@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         // 초기화면 설정
         replaceFragment(homeFragment)
 
-        binding.bottomNavigationView.setOnItemSelectedListener {
+        binding.bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId) {
                 R.id.home -> replaceFragment(homeFragment)
                     R.id.chatList -> replaceFragment(chatListFragment)

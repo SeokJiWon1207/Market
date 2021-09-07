@@ -1,11 +1,11 @@
 package com.example.market.home
 
 data class ArticleModel(
-    val sellerId: String, // 판매자 id
-    val title: String, // 판매 제목
-    val createdAt: Long, // 생성시간
-    val price: String, // 가격
-    val imageUrl: String // 상품 이미지
+    val sellerId: String,
+    val title: String,
+    val createdAt: Long,
+    val price: String,
+    val imageUrl: String
 ) {
 
     constructor(): this("", "", 0, "", "")
